@@ -12,14 +12,17 @@ class Megjelenitsor{
         this.pipaElem.on("click",()=>{
             console.log(this)
             this.sorElem.css("background-color","lightgreen")
+            this.#esemenyTrigger("pipa");
         })
         this.megseElem.on("click",()=>{
             console.log(this)
             this.sorElem.css("background-color","white")
+            this.#esemenyTrigger("megse");
         })
         this.torolElem.on("click",()=>{
             console.log(this)
             this.sorElem.css("background-color","red")
+            this.#esemenyTrigger("torles");
         })
     }
     #sor(){
